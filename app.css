@@ -1,0 +1,75 @@
+@media screen and (orientation:portrait) {
+    #content{
+        grid-template-rows: 60% 40%;
+    }
+}
+@media screen and (orientation:landscape) {
+    #content{
+        grid-template-columns: 60% 40%;
+    }
+}
+html {
+    overflow-y: show;
+    overflow-x: hidden;
+}
+body{ 
+ 
+}
+#tombol svg{
+    display: block; 
+    background-color: black;
+    padding: 10px;
+}
+#kembali{
+    fill: none;
+    stroke: white; 
+    stroke-width: 3px;
+}
+#content{
+    display: grid;
+}
+#image{
+    display: flex;
+    background-position: center;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    height= 500px;
+}
+#image svg{
+    background-image: url(jpg/akardikotil.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    width: 70%;
+}
+g{
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+#teks{
+    display: block;
+    background-color: black;
+    padding: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#judul{
+    font-size: xx-large;
+    
+}
+#deskripsi{
+    font-size: x-large;
+}
+
+#label{
+    display: flex;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: white;
+    
+}
+
