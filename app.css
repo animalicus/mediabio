@@ -11,11 +11,13 @@
 html {
     overflow-y: show;
     overflow-x: hidden;
+    
 }
 body{ 
- 
+    font-family: Arial, Helvetica, sans-serif;
 }
-#tombol svg{
+#tombol{
+    width: 35px;
     display: block; 
     background-color: black;
     padding: 10px;
@@ -35,15 +37,38 @@ body{
     justify-content: center;
     align-items: center;
     height= 500px;
+    overflow: hidden
 }
 #image svg{
-    background-image: url(jpg/akardikotil.png);
+
     background-repeat: no-repeat;
     background-size: contain;
     height: auto;
     width: 70%;
+    transition: transform 1s;
+    
 }
-g{
+#image2{
+    display: flex;
+    background-position: center;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    height= 500px;
+    overflow: hidden
+}
+
+#image2 svg{
+
+ 
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    transition: transform 1s;
+    
+}
+
+#image svg g{
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -52,7 +77,7 @@ g{
     background-color: black;
     padding: 30px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 #judul{
     font-size: xx-large;
@@ -72,4 +97,6 @@ g{
     color: white;
     
 }
-
+ul{
+    color: white;
+}
